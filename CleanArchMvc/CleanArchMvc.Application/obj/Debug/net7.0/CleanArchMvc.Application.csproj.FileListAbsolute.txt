@@ -1,0 +1,15 @@
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\bin\Debug\net7.0\CleanArchMvc.Application.deps.json
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\bin\Debug\net7.0\CleanArchMvc.Application.dll
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\bin\Debug\net7.0\CleanArchMvc.Application.pdb
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\bin\Debug\net7.0\CleanArchMvc.Domain.dll
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\bin\Debug\net7.0\CleanArchMvc.Domain.pdb
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.csproj.AssemblyReference.cache
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.AssemblyInfoInputs.cache
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.AssemblyInfo.cs
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.csproj.CoreCompileInputs.cache
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.csproj.CopyComplete
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.dll
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\refint\CleanArchMvc.Application.dll
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\CleanArchMvc.Application.pdb
+C:\ProjetosLocais\CleanArchiteture\CleanArchMvc\CleanArchMvc.Application\obj\Debug\net7.0\ref\CleanArchMvc.Application.dll
