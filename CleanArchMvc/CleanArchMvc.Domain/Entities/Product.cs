@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CleanArchMvc.Domain.Validation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Entities
 {
-    public sealed class Product
-    {
-        public int Id { get; private set; }
-
+    public sealed class Product : Entity
+    {     
         public string Name { get; private set; } = string.Empty;
 
         public string Description { get; private set; } = string.Empty;
@@ -20,8 +19,116 @@ namespace CleanArchMvc.Domain.Entities
 
         public string Image { get; private set; } = string.Empty;
 
-        public int CategoryId { get; private set; }   
+        public int CategoryId { get;  set; }   
 
-        public Category Category { get; private set; }  = new Category();
+        public Category Category { get; set; }
+
+        #region [ CONSTRUTORES ]
+
+        public Product
+            (
+                string name,
+                string descricao,
+                decimal price,
+                int stock,
+                string image
+            )
+        {
+            ValidadeDomain
+            (
+                name:name,
+                descricao:descricao,
+                price:price, 
+                stock:stock,
+                image:image
+             );
+        }
+
+        public Product
+           (
+               int id, 
+               string name,
+               string descricao,
+               decimal price,
+               int stock,
+               string image
+           )
+        {
+            DomainExceptionValidation.When(id < 0, "Invalid Id Value");
+
+            Id = id;
+
+            ValidadeDomain
+            (
+                name: name,
+                descricao: descricao,
+                price: price,
+                stock: stock,
+                image: image
+             );
+        }
+
+        public void Update
+           (
+               string name,
+               string descricao,
+               decimal price,
+               int stock,
+               string image,
+               int categoryId
+           )
+        {
+            ValidadeDomain
+            (
+                name: name,
+                descricao: descricao,
+                price: price,
+                stock: stock,
+                image: image
+             );
+
+            CategoryId = categoryId;
+        }
+
+        #endregion
+
+        #region [ VALIDATION ]
+        private void ValidadeDomain
+            (
+                string name,
+                string descricao,
+                decimal price,
+                int stock, 
+                string image 
+            )
+        {
+            DomainExceptionValidation.When(string.IsNullOrEmpty(name),
+                "Invalid name. name is required ");
+
+            DomainExceptionValidation.When(name.Length < 3,
+               "Invalid name. to short, minimum 3 characters ");
+
+            DomainExceptionValidation.When(string.IsNullOrEmpty(descricao),
+                "Invalid descricao. descricao is required ");
+
+            DomainExceptionValidation.When(descricao.Length < 5,
+                "Invalid descricao.to short, minimum 3 characters");
+
+            DomainExceptionValidation.When(price < 0, "Invalid price value");
+
+            DomainExceptionValidation.When(stock < 0, "Invalid stock value");
+
+            DomainExceptionValidation.When(image.Length > 250,
+               "Invalid image name. too long   maximum 250 characters.");
+
+            Name = name;
+            Description = descricao;
+            Price = price;
+            Stock = stock;
+            Image = image;
+
+        }
+
+        #endregion
     }
 }

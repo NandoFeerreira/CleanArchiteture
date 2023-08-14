@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Entities;
 
-public sealed class Category
-{
-    public int Id { get; private set; }
-
+public sealed class Category : Entity
+{   
     public string Name { get; private set; } = string.Empty;
 
-    public ICollection<Product> Products { get; set; }  
+    public ICollection<Product> Products { get; set; }
 
+    #region [ CONSTRUTORES ]
 
     public Category(string name)
     {
@@ -28,6 +27,9 @@ public sealed class Category
         ValidateDomain(name);
     }
 
+    #endregion
+
+    #region [ VALIDATIONS ]
     public void Update(string name)
     {
         ValidateDomain(name);
@@ -44,4 +46,5 @@ public sealed class Category
         Name = name;
 
     }
+    #endregion
 }
