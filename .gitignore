@@ -259,12 +259,9 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
-src/WEB/ELOGIOS4BIO.SITE/AttachmentsElogios
-src/WEB/HELPDESK.SITE/Attachments
-src/WEB/HELPDESK.SITE/AttachmentsNewsLetter
-src/WEB/HELPDESK.SITE/CkeditorFiles
-src/WEB/HELPDESK.SITE/CkeditorImages
-src/WEB/RD4BIO.SITE/Files
-src/WEB/ELOGIOS4BIO.SITE/wwwroot
-src/WEB/HELPDESK.SITE/wwwroot
-src/WEB/RD4BIO.SITE/wwwroot
+/CleanArchMvc/CleanArchMvc.Application/obj/Debug/net7.0/CleanArchMvc.Application.csproj.AssemblyReference.cache
+/CleanArchMvc/CleanArchMvc.Infra.Data/obj/Debug/net7.0/CleanArchMvc.Infra.Data.csproj.AssemblyReference.cache
+/CleanArchMvc/.vs/CleanArchMvc/v17/.suo
+/CleanArchMvc/CleanArchMvc.Infra.Ioc/obj/Debug/net7.0/CleanArchMvc.Infra.Ioc.csproj.AssemblyReference.cache
+/CleanArchMvc/CleanArchMvc.Web.Ui/obj/Debug/net7.0/CleanArchMvc.Web.Ui.csproj.AssemblyReference.cache
+/CleanArchMvc/.vs/CleanArchMvc/DesignTimeBuild/.dtbcache.v2
