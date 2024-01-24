@@ -266,3 +266,4 @@ __pycache__/
 /CleanArchMvc/CleanArchMvc.Web.Ui/obj/Debug/net7.0/CleanArchMvc.Web.Ui.csproj.AssemblyReference.cache
 /CleanArchMvc/.vs/CleanArchMvc/DesignTimeBuild/.dtbcache.v2
 /CleanArchMvc/CleanArchMvc.Application/obj/Debug/net7.0/CleanArchMvc.Application.assets.cache
+/CleanArchMvc/CleanArchMvc.Application/obj/CleanArchMvc.Application.csproj.nuget.dgspec.json
