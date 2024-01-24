@@ -265,3 +265,4 @@ __pycache__/
 /CleanArchMvc/CleanArchMvc.Infra.Ioc/obj/Debug/net7.0/CleanArchMvc.Infra.Ioc.csproj.AssemblyReference.cache
 /CleanArchMvc/CleanArchMvc.Web.Ui/obj/Debug/net7.0/CleanArchMvc.Web.Ui.csproj.AssemblyReference.cache
 /CleanArchMvc/.vs/CleanArchMvc/DesignTimeBuild/.dtbcache.v2
+/CleanArchMvc/CleanArchMvc.Application/obj/Debug/net7.0/CleanArchMvc.Application.assets.cache
