@@ -15,6 +15,8 @@ namespace CleanArchMvc.Domain.Interfaces
 
         Task<Product> AdicionarAsync(Product input);
 
+        Task<Product> ObterProductCategoryAsync(int? id);
+
         Task<Product> AtualizarAsync(Product input);
 
         Task<Product> RemoverAsync(Product input);

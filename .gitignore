@@ -286,3 +286,6 @@ __pycache__/
 /CleanArchMvc/CleanArchMvc.Web.Ui/obj/CleanArchMvc.Web.Ui.csproj.nuget.g.props
 /CleanArchMvc/CleanArchMvc.Web.Ui/obj/project.assets.json
 /CleanArchMvc/CleanArchMvc.Infra.Data/obj/CleanArchMvc.Infra.Data.csproj.nuget.g.targets
+/CleanArchMvc/CleanArchMvc.Web.Ui/obj/CleanArchMvc.Web.Ui.csproj.nuget.g.targets
+/CleanArchMvc/CleanArchMvc.Infra.Ioc/obj/CleanArchMvc.Infra.Ioc.csproj.nuget.g.targets
+/CleanArchMvc/CleanArchMvc.Domain/obj/CleanArchMvc.Domain.csproj.nuget.g.targets
