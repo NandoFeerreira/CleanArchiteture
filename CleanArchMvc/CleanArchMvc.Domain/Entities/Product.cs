@@ -28,7 +28,7 @@ namespace CleanArchMvc.Domain.Entities
         public Product
             (
                 string name,
-                string descricao,
+                string description,
                 decimal price,
                 int stock,
                 string image
@@ -37,7 +37,7 @@ namespace CleanArchMvc.Domain.Entities
             ValidadeDomain
             (
                 name:name,
-                descricao:descricao,
+                description: description,
                 price:price, 
                 stock:stock,
                 image:image
@@ -48,7 +48,7 @@ namespace CleanArchMvc.Domain.Entities
            (
                int id, 
                string name,
-               string descricao,
+               string description,
                decimal price,
                int stock,
                string image
@@ -61,7 +61,7 @@ namespace CleanArchMvc.Domain.Entities
             ValidadeDomain
             (
                 name: name,
-                descricao: descricao,
+                description: description,
                 price: price,
                 stock: stock,
                 image: image
@@ -71,7 +71,7 @@ namespace CleanArchMvc.Domain.Entities
         public void Update
            (
                string name,
-               string descricao,
+               string description,
                decimal price,
                int stock,
                string image,
@@ -81,7 +81,7 @@ namespace CleanArchMvc.Domain.Entities
             ValidadeDomain
             (
                 name: name,
-                descricao: descricao,
+                description: description,
                 price: price,
                 stock: stock,
                 image: image
@@ -96,7 +96,7 @@ namespace CleanArchMvc.Domain.Entities
         private void ValidadeDomain
             (
                 string name,
-                string descricao,
+                string description,
                 decimal price,
                 int stock, 
                 string image 
@@ -108,10 +108,10 @@ namespace CleanArchMvc.Domain.Entities
             DomainExceptionValidation.When(name.Length < 3,
                "Invalid name. to short, minimum 3 characters ");
 
-            DomainExceptionValidation.When(string.IsNullOrEmpty(descricao),
+            DomainExceptionValidation.When(string.IsNullOrEmpty(description),
                 "Invalid descricao. descricao is required ");
 
-            DomainExceptionValidation.When(descricao.Length < 5,
+            DomainExceptionValidation.When(description.Length < 5,
                 "Invalid descricao.to short, minimum 3 characters");           
 
             DomainExceptionValidation.When(price < 0, "Invalid price value");
@@ -122,7 +122,7 @@ namespace CleanArchMvc.Domain.Entities
                "Invalid image name. too long   maximum 250 characters.");
 
             Name = name;
-            Description = descricao;
+            Description = description;
             Price = price;
             Stock = stock;
             Image = image;
