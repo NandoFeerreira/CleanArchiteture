@@ -15,8 +15,7 @@ namespace CleanArchMvc.Domain.Entities
 
         public decimal Price { get; private set; }
 
-        public int Stock { get; private set; }
-        public int? terste { get; private set; }
+        public int Stock { get; private set; }       
 
         public string Image { get; private set; } = string.Empty;
 
