@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Application.Service
 {
-    public class PruductService : IProductService
+    public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository; 
         private readonly IMapper _mapper;   
 
-        public PruductService(IProductRepository productRepository, IMapper mapper)
+        public ProductService(IProductRepository productRepository, IMapper mapper)
         {
             _productRepository = productRepository;
             _mapper = mapper;
