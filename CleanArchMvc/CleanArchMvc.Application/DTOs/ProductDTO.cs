@@ -7,11 +7,14 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
+using System.Reflection.Metadata;
 
 namespace CleanArchMvc.Application.DTOs
 {
     public class ProductDTO
-    {
+    {  
+
         public int Id { get; set; }
 
         [Required(ErrorMessage = "The Name is Required")]
@@ -42,7 +45,8 @@ namespace CleanArchMvc.Application.DTOs
         [DisplayName("Product Image")]
         public string Image { get; set; }
 
-        public Category Category { get; set; }
+        [JsonIgnore]
+        public Category? Category { get; set; }
 
         [DisplayName("Categories")]
         public int CategoryId { get; set; }
