@@ -28,7 +28,7 @@ namespace CleanArchMvc.Infra.Data.Repositories
 
         public async Task<Product> AtualizarAsync(Product input)
         {
-            _context.Remove(input);
+            _context.Update(input);
             await _context.SaveChangesAsync();
             return input;
         }
