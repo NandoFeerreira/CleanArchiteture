@@ -16,7 +16,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=BIO368\\FERNANDO;Initial Catalog=CleanArchDB;User ID=sa;Password=Ffbbundika3!;Encrypt=False", 
+        optionsBuilder.UseSqlServer("Server=BIO614\\FERNANDOBIO;Initial Catalog=CleanArchDB;User ID=sa;Password=Ffbbundika3!;Encrypt=False", 
             b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)); 
         base.OnConfiguring(optionsBuilder);
     }
