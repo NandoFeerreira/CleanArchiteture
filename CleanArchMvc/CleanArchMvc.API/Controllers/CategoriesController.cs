@@ -21,33 +21,59 @@ namespace CleanArchMvc.API.Controllers
         {
             var categories = await _categoryService.GetCategories();
 
-            if (categories == null )
+            if (categories == null)
             {
                 return NotFound("Categories Not Found");
             }
 
-            return Ok(categories);  
+            return Ok(categories);
         }
 
-        [HttpGet("{id:int}", Name ="GetCategory")]
+        [HttpGet("{id:int}", Name = "GetCategory")]
         public async Task<ActionResult<CategoryDTO>> Get(int id)
         {
             var category = await _categoryService.GetById(id);
-            
+
             if (category == null) { NotFound("Categorie not found"); }
-            return Ok(category);    
+            return Ok(category);
 
         }
 
 
         [HttpPost]
-        public async Task<ActionResult>Post([FromBody]CategoryDTO categoryDTO)
+        public async Task<ActionResult> Post([FromBody] CategoryDTO categoryDTO)
         {
             if (categoryDTO == null) { BadRequest("Dados Inválidos"); }
 
             await _categoryService.Add(categoryDTO);
 
-            return new CreatedAtRouteResult("GetCategory", new  { id = categoryDTO.Id}, categoryDTO);
+            return new CreatedAtRouteResult("GetCategory", new { id = categoryDTO.Id }, categoryDTO);
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> Put([FromBody] CategoryDTO categoryDto)
+        {
+           
+            if (categoryDto == null)
+            {
+                return BadRequest();
+            }
+            await _categoryService.Update(categoryDto);
+            return Ok(categoryDto);
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<CategoryDTO>>Delete (int id)
+        {
+            var category = await _categoryService.GetById(id);
+
+            if (category == null)
+            {
+                return NotFound("Category not found.");
+            }
+
+            await _categoryService.Remove(id);
+            return Ok(category);
         }
     }
 }
